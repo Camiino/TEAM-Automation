@@ -1,0 +1,59 @@
+#about{
+    padding: 150px;
+    padding-top: 0;
+    background-color: #EBF0F0;
+}
+
+#about .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+#about .content .img-container{
+    width: 100%;
+    position: relative;
+}
+
+#about .content .img-container img{
+    width: 100%;
+}
+
+#about .content .corner-decor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: -2rem;
+}
+
+#about .content .title h3{
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+#about .content .text p{
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+#about .content button{
+    background-color: #01509F;
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    color: white;
+    text-transform: capitalize;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    height: 3.5rem;
+    aspect-ratio: 3.4;
+    width: fit-content;
+    margin-top: 2rem;
+}
+
+#about .content button p{
+    margin: 0;
+}
