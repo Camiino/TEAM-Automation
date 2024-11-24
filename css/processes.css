@@ -33,6 +33,7 @@
     align-items: center; 
     text-decoration: none;
     width: fit-content;
+    color: #01509F;
 }
 
 #processes .content .process a svg{
