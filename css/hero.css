@@ -4,8 +4,7 @@
 }
 
 #hero .logo{
-    width: 20px;
-
+    width: fit-content;
 }
 
 #hero video{
@@ -17,4 +16,56 @@
     min-height: 100vh;
     object-fit: cover;
     z-index: -2;
+}
+
+.nav {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    cursor: pointer;
+    padding: 1em;
+    width: 10%;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: clamp(23px, 4vh, 4vh);
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line {
+    fill: none;
+    stroke: var(--invert-icon);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition:
+        stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+.quick-nav-left {
+    width: 40%;
 }

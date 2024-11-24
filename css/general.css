@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
+
+:root{
+    --primary-color: #fff; 
+    --primary-color-dark: #eee;
+    --primary-color-darker: #333;
+    --sec-color: #01509F; 
+    --sec-color-light: #2A7AF3;
+
+    --primary-icon: #000;
+    --invert-icon: #fff;  
+    --primary-icon-hover: #01509F;  
+    --primary-icon-active: #2A7AF3;  
+    
+    --primary-font: "Lexend Deca", sans-serif;
+    --title-font: "Lexend Deca", sans-serif;
+
+    --primary-text: #000;  
+    --sec-text: #333;
+    --emphasize-text: #01509F;
+    --invert-text: #fff;
+}
+
 body, html{
     padding: 0;
     margin: 0;
