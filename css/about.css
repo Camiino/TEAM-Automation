@@ -54,6 +54,11 @@
     margin-top: 2rem;
 }
 
+#about .content button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
 #about .content button p{
     margin: 0;
 }

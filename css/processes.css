@@ -35,6 +35,15 @@
     width: fit-content;
     color: #01509F;
 }
+#processes .content .process a p{
+    transition: .3s ease-in-out;
+}
+
+#processes .content .process a:hover p{
+    transform: translate(5px, 0);
+    filter: brightness(1.1);
+}
+
 
 #processes .content .process a svg{
     margin-right: 1rem;

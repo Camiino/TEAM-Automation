@@ -3,8 +3,9 @@
     height: 100vh;
 }
 
-#hero .logo{
-    width: fit-content;
+.hero .logo{
+    display: flex;
+    justify-content: center;
 }
 
 #hero video{
@@ -16,15 +17,85 @@
     min-height: 100vh;
     object-fit: cover;
     z-index: -2;
+    filter: brightness(0.7);
 }
 
 .nav {
+    position: fixed;
+    top: 0;
     height: 8vh;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: height .3s;
 }
 
+.nav.scrolled {
+    background-color: var(--primary-color);
+    height: 7vh;
+    
+}
+
+.nav.scrolled .logo {
+    margin-top: 0.5rem;
+}
+.nav.scrolled .logo svg g path.gray {
+    stroke: #9d9d9f;
+    fill: #9d9d9f;
+}
+
+.nav.scrolled .quick-nav-right a,
+.nav.scrolled .quick-nav-left a {
+    color: var(--primary-text);
+}
+
+.nav.scrolled .quick-nav-right a:nth-child(1) svg path {
+    fill: var(--primary-icon);
+    stroke: var(--primary-icon);
+}
+.nav.scrolled .quick-nav-right a:nth-child(2) svg path {
+    fill: var(--primary-icon);
+}
+.nav.scrolled .quick-nav-right a:nth-child(3) svg path {
+    stroke: var(--primary-icon);
+}
+
+.nav.scrolled .hamburger svg path.line {
+    stroke: var(--primary-icon);
+} 
+
+
+.hero .hero-text {
+    position: relative;
+    left: 3.5rem;
+    color: var(--invert-text);
+    font-size: 2.5rem;
+    top: 4rem;
+}
+
+.hero .hero-text h1:nth-child(1){
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.hero .hero-text h1:nth-child(2){
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.hero .hero-subtext {
+    position: relative;
+    left: 10rem;
+    color: var(--invert-text);
+    text-align: center;
+    width: fit-content;
+    top: 20rem;
+}
+.ham {
+    width: 10%;
+}
 .hamburger {
     cursor: pointer;
     padding: 1em;
@@ -67,5 +138,35 @@
 }
 
 .quick-nav-left {
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    gap: 4rem;
+}
+.hero .logo {
+    width: 20%;
+    margin-top: 1rem;
+}
+.quick-nav-right {
     width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-content: end;
+    gap: 4rem;
+}
+.quick-nav-right .search:nth-last-child(1) {
+    padding-right: 5rem;
+}
+
+.quick-nav-right a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quick-nav-right a,
+.quick-nav-left a {
+    text-decoration: none;
+    color: var(--invert-text);
+    font-weight: 700;
 }

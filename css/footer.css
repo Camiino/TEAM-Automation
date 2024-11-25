@@ -55,13 +55,13 @@
     font-weight: bold;
 }
 
-.logo{
+.footer .logo{
     margin: 0 auto;
     height: 10vh;
 
 }
 
-.logo svg{
+.footer .logo svg{
     width: 300px;
     height: auto;
 }
